@@ -1,6 +1,6 @@
 # dotstail
 
-![enter image description here](http://i.imgur.com/mHUOVqt.jpg)
+![enter image description here](http://i.imgur.com/Lhvjbuo.png)
 
 ## Quick start
 * Clone the repo: `git clone git@github.com:foxieboy/dotstail.git`
