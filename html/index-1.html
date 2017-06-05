@@ -1,4 +1,64 @@
-'use strict';
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+    <meta charset="UTF-8">
+    <title>Document</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <style type="text/css">
+        .inner {
+            font-size: 14px;
+              line-height: 1.6em;
+              /*width: 300px;*/
+              font-family: Arial;
+              text-align: justify;
+        }
+        .item-name,
+        .item-2 {
+              font-size: 14px;
+              line-height: 1.6em;
+              /*width: 300px;*/
+              font-family: Arial;
+              text-align: justify;
+            }
+    </style>
+  <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/1.9.1/jquery.js"></script>
+  <script type="text/javascript" src="./theme/js/jquery.min.js"></script>
+<script type="text/javascript" src="./theme/js/bootstrap.min.js"></script>
+</head>
+<body>
+  <!-- <div class="inner">123</div> -->
+  <div class="item-name" data-responsive="">
+    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Minus consectetur officiis, fugit accusamus fugit sed optio. Iusto sed adipisci, pariatur aliquam provident quae libero quaerat consectetur dolor repellendus esse aperiam laudantium?
+
+    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Atque officia sunt cumque similique quibusdam quod dignissimos numquam inventore neque unde eligendi cum, adipisci omnis molestiae ad! Repellendus, nihil ipsam ea!
+
+    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Minus consectetur officiis, fugit accusamus fugit sed optio. Iusto sed adipisci, pariatur aliquam provident quae libero quaerat consectetur dolor repellendus esse aperiam laudantium?
+
+    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Atque officia sunt cumque similique quibusdam quod dignissimos numquam inventore neque unde eligendi cum, adipisci omnis molestiae ad! Repellendus, nihil ipsam ea!
+
+    123 456 789
+  </div>
+  <div class="item-2">
+        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Minima ex officiis, perferendis necessitatibus, voluptates ipsam iure quasi ullam et, magni amet. A iure consequatur veniam minima excepturi error, libero odit.
+        Truong Nguyen Minh Tu
+  </div>
+
+  <!-- <div class="item-name-1" data="">
+    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Minus consectetur officiis, fugit accusamus fugit sed optio. Iusto sed adipisci, pariatur aliquam provident quae libero quaerat consectetur dolor repellendus esse aperiam laudantium?
+
+    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Atque officia sunt cumque similique quibusdam quod dignissimos numquam inventore neque unde eligendi cum, adipisci omnis molestiae ad! Repellendus, nihil ipsam ea!
+
+    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Minus consectetur officiis, fugit accusamus fugit sed optio. Iusto sed adipisci, pariatur aliquam provident quae libero quaerat consectetur dolor repellendus esse aperiam laudantium?
+  </div> -->
+  <!-- <div class="item-name">
+    Lorem ipsum dolor sit amet,
+ consectetur adipisicing elit. Minus consectetur officiis, fugit accusamus fugit sed optio. Iusto sed adipisci, pariatur aliquam provident quae libero quaerat consectetur dolor repellendus esse aperiam laudantium?
+
+    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Atque officia sunt cumque similique quibusdam quod dignissimos numquam inventore neque unde eligendi cum, adipisci omnis molestiae ad! Repellendus, nihil ipsam ea!
+  </div> -->
+</body>
+<script type="text/javascript">
 
 var dotstail = {
     setDot: function ( options ) {
@@ -85,3 +145,19 @@ var dotstail = {
 
     }
 }
+
+dotstail.setDot ({
+    'element': '.item-name',
+    'letter': 0,
+    'lines': 2,
+    'resize': true
+});
+
+dotstail.setDot ({
+    'element': '.item-2',
+    'letter': 0,
+    'lines': 2
+});
+
+</script>
+</html>

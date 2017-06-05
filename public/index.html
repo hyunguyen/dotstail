@@ -3,62 +3,113 @@
 
 <head>
     <meta charset="UTF-8">
-    <title>Document</title>
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+    <title>Dotstail</title>
+    <link rel="stylesheet" href="./theme/css/style.css">
 
-    <style type="text/css">
-        .item-name,
-        .item-name-2 {
-            line-height: 1.6em;
-            font-size: 16px;
-        }
-    </style>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
 
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
-
-    <script type="text/javascript" src="./theme/js/dotstail.js"></script>
+    <script type="text/javascript" src="./theme/js/jquery.min.js"></script>
+    <script type="text/javascript" src="./theme/js/bootstrap.min.js"></script>
 </head>
 
 <body>
+    <nav class="navbar navbar-default">
+        <div class="container">
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <a class="navbar-brand bottom-line blue-line" href="#">dotstail</a>
+            </div>
+
+            <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                <ul class="nav navbar-nav navbar-right">
+                    <li class="active bottom-line pink-line"><a href="#">About<span class="sr-only">(current)</span></a></li>
+                    <li class="bottom-line orange-line"><a href="#">How to Use & Doc</a></li>
+                    <li class="bottom-line green-line"><a href="#">Github</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
     <div class="container">
         <div class="row">
-            <div class="col-xs-12">
-                <h1>Hello Everybody</h1>
-            </div>
-            <div class="col-xs-6">
-                <div class="item-name">
-                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Illo sequi quas harum saepe asperiores dignissimos incidunt nihil quaerat! Ea vel ullam aliquid quidem quas quasi qui, earum nulla atque excepturi. Lorem ipsum dolor sit amet, consectetur adipisicing
-                    elit. Vero non nesciunt esse adipisci ducimus itaque ratione magnam saepe, hic nostrum, accusantium, ea delectus reiciendis earum autem voluptas cupiditate illo eius. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Vero non
-                    nesciunt esse adipisci ducimus itaque ratione magnam saepe, hic nostrum, accusantium, ea delectus reiciendis earum autem voluptas cupiditate illo eius.
-                </div>
-            </div>
-            <div class="col-xs-6">
-                <div class="item-name-2">
-                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Illo sequi quas harum saepe asperiores dignissimos incidunt nihil quaerat! Ea vel ullam aliquid quidem quas quasi qui, earum nulla atque excepturi. Lorem ipsum dolor sit amet, consectetur adipisicing
-                    elit. Vero non nesciunt esse adipisci ducimus itaque ratione magnam saepe, hic nostrum, accusantium, ea delectus reiciendis earum autem voluptas cupiditate illo eius. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Vero non
-                    nesciunt esse adipisci ducimus itaque ratione magnam saepe, hic nostrum, accusantium, ea delectus reiciendis earum autem voluptas cupiditate illo eius.
-
+            <div class="section section-about">
+                <div class="col-sm-4 content content-left">
+                    <h1 class="content-title">About <strong>dotstail</strong></h1>
+                    <h3>The Problem</h3>
                     <p>
-                        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Vero non nesciunt esse adipisci ducimus itaque ratione magnam saepe, hic nostrum, accusantium, ea delectus reiciendis earum autem voluptas cupiditate illo eius.
+                        As we - Front-end Devs all know that Css <code>text-overflow: ellipsis</code> gives result as <strong>a single line only</strong>, which is annoying sometimes when the outcome wanted is a mutiple line ellipsis.
                     </p>
+                    <h3>What is dotstail?</h3>
+                    <p>
+                        Dotstail is a repo that help you to custom <code>text-overflow: ellipsis</code> for <strong>mutiple lines</strong> by using JavaScript and a little css line.
+                    </p>
+                    <!-- <p>
+                        By using <strong>dotstail</strong> not only you can ajust the number of line you want to have the ellipsis effect but also the number letter(s) you want to cut out.
+                    </p> -->
                 </div>
+                <div class="col-sm-8 content-right">
+                    <h1 class="content-title"><strong>dotstail</strong> Demos</h1>
+                    <div class="paragraph">
+                        <img src="theme/images/cactus.png" alt="">
+                        <div class="paragraph-content">
+                            <h3>The 1st Paragraph</h3>
+                            <p class="dotstail-1">
+                                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quasi illo culpa iste, ea accusantium, ut nulla eligendi. Omnis sapiente ex delectus mollitia nam eveniet unde pariatur voluptatem adipisci dolore, illum!
+                            </p>
+                        </div>
+                    </div>
+                    <div class="paragraph">
+                        <img src="theme/images/landscape.png" alt="">
+                        <div class="paragraph-content">
+                            <h3>The 2nd Paragraph</h3>
+                            <p class="dotstail-2">
+                                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Necessitatibus illum ex, soluta temporibus suscipit rem, vel, animi iste praesentium fugiat quisquam vero non excepturi corporis! Minus deleniti aliquam blanditiis nobis! Lorem ipsum dolor sit
+                                amet, consectetur adipisicing elit. Ab recusandae nihil, consequuntur beatae possimus neque, aspernatur molestias itaque sed a maxime! Culpa, hic laboriosam, consequuntur deleniti enim quae nisi amet.
+                            </p>
+                        </div>
+                    </div>
+                    <div class="paragraph">
+                        <img src="theme/images/boat.png" alt="">
+                        <div class="paragraph-content">
+                            <h3>The 3rd Paragraph</h3>
+                            <p class="dotstail-3">
+                                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nulla voluptate, voluptatem doloremque nobis. At quibusdam dolores culpa voluptatibus consequuntur in sequi laborum minima, voluptas veritatis iusto earum asperiores unde. Id. Lorem ipsum dolor
+                                sit amet, consectetur adipisicing elit. Provident quam a perspiciatis, molestias aperiam dolorum ipsam ab facilis qui officia ea recusandae inventore magnam quod quidem vel dolore molestiae! Vel?
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="section section-doc">
+                <h1>How to use</h1>
             </div>
         </div>
     </div>
 
+    <script type="text/javascript" src="./theme/js/dotstail.js"></script>
 
     <script type="text/javascript">
-        $.setDot({
-            'element': '.item-name',
-            'letter': 2,
-            'line-height': 2
+        dotstail.setDot({
+            'element': '.dotstail-1',
+            'letter': 0,
+            'lines': 2,
         });
 
-        $.setDot({
-            'element': '.item-name-2',
-            'letter': 2,
-            'line-height': 2
-        });
+        // dotstail.setDot ({
+        //     'element': '.dotstail-2',
+        //     'letter': 0,
+        //     'lines': 3,
+        // });
+
+        // dotstail.setDot ({
+        //     'element': '.dotstail-3',
+        //     'lines': 4,
+        // });
     </script>
 </body>
 
