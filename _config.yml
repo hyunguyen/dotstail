@@ -1,0 +1,33 @@
+# Dependencies
+markdown:         kramdown
+highlighter:      rouge
+
+kramdown:
+  auto_ids: true
+
+# Permalinks
+permalink:        pretty
+
+gems:
+  - jekyll-redirect-from
+  - jekyll-sitemap
+
+# Social
+title: foxieboy
+description: Dotstail- help you to make multiple lines elipsis
+# twitter: 
+authors: foxieboy
+social_logo_path: http://i.imgur.com/Lhvjbuo.png
+social_image_path: http://i.imgur.com/Lhvjbuo.png
+
+# Custom vars
+current_version:  1.1.0
+repo:             https://github.com/foxieboy/dotstail.git
+
+download:
+  source:         https://github.com/foxieboy/dotstail/archive/master.zip
+  dist:           https://github.com/foxieboy/dotstail/archive/master.zip
+
+blog:             https://foxieboy.github.io/dotstail/
+expo:             https://foxieboy.github.io/dotstail/
+themes:           https://foxieboy.github.io/dotstail/
