@@ -1,8 +1,8 @@
 {
   "name": "dotstail",
   "version": "1.0.1",
-  "description": "Dot",
-  "main": "index.js",
+  "description": "Dotstail-multiple lines elipsis",
+  "main": "dotstail.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },

@@ -9,7 +9,7 @@
 
 ## How to use
 In other to use dotstail:
-1. The element you want to have a text ellipsis effect must have a CSS `line-height property` (must be a `em` unit).
+1. The element you want to have a text elipsis effect must have a CSS `line-height property` (must be a `em` unit).
 2. In your script file, set dotstail function for the element:
 
 `dotstail.setDot ({
@@ -28,7 +28,7 @@ Call the function by `dotstail.setDot ();`
 ## Documentation
 * `element`: is your element class/Id
 * `letter`: is the number of letter you want to cut out at the end of the last line.
-* `line`: is the number of line you want your element to have a `text ellipsis` effect.
+* `line`: is the number of line you want your element to have a `text elipsis` effect.
 
 
 ## Template full feature list
