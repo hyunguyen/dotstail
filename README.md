@@ -4,7 +4,7 @@
 
 ## Quick start
 * Clone the repo: `git clone git@github.com:foxieboy/dotstail.git`
-* Install with npm: `npm install --save-dev foxieboy/dotstail`
+* Install with npm: `npm install --save-dev dotstail`
 * Or download the [latest release] (https://github.com//foxieboy/dotstail/archive/master.zip)
 
 ## How to use
@@ -23,7 +23,7 @@ In other to use dotstail:
 Call the function by `dotstail.setDot ();`
 
 ## Demo
-*https://foxieboy.github.io/dotstail/
+* https://foxieboy.github.io/dotstail/
 
 ## Documentation
 * `element`: is your element class/Id
