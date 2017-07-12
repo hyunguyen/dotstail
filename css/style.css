@@ -5948,7 +5948,7 @@ body {
     float: left;
     width: 100%;
     color: #555;
-    padding: 20px 40px;
+    padding: 20px 30px;
     background-color: #fff; }
     .section-body h3 {
       margin-top: 20px; }
@@ -5974,3 +5974,13 @@ body {
 [class*="dotstail-"] {
   width: 100%;
   line-height: 1.6em; }
+
+@media (max-width: 768px) {
+  .section-title {
+    padding-left: 20px; }
+    .section-title:after {
+      left: 20px; }
+  .content-left, .content-right {
+    padding: 15px; }
+  .section-body {
+    padding: 15px 0; } }
