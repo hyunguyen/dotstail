@@ -1,0 +1,217 @@
+@import "./node_modules/bootstrap-sass/assets/stylesheets/bootstrap";
+@import url('https://fonts.googleapis.com/css?family=Damion|Roboto:300,700');
+
+//Custom Css
+body {
+	font-family: 'Roboto', sans-serif;
+	font-weight: 300;
+	background: #232129;
+	color: #fff;
+	line-height: 1.6em;
+	font-size: 15px;
+}
+
+.bottom-line {
+	&:after {
+        content:'';
+        position: absolute;
+        width: 0;
+        height: 4px;
+        bottom: 0;
+        left: 5%;
+        -webkit-border-radius: 100px;
+	    -moz-border-radius: 100px;
+	    -ms-border-radius: 100px;
+	    -o-border-radius: 100px;
+	    border-radius: 100px;
+        -webkit-transition: all .3s ease-in-out .1s;
+        -moz-transition: all .3s ease-in-out .1s;
+        -o-transition: all .3s ease-in-out .1s;
+        transition: all .3s ease-in-out .1s;
+        background-color: transparent;
+    }
+    &:hover,&.active {
+        &:after {
+        	width: 90%;
+        }
+    }
+    &.blue-line {
+		&:hover,&.active {
+	        &:after {
+	            background-color: #00c6ff;
+	        }
+	    }
+    }
+    &.pink-line {
+		&:hover,&.active {
+	        &:after {
+	            background-color: #f16d99;
+	        }
+	    }
+    }
+    &.green-line {
+		&:hover,&.active {
+	        &:after {
+	            background-color: #8acb8d;
+	        }
+	    }
+    }
+    &.orange-line {
+		&:hover,&.active {
+	        &:after {
+	            background-color: #ffbc59;
+	        }
+	    }
+    }
+    &.active {
+        &:after {
+        	width: 90%;
+        }
+        &:hover {
+	        &:after {
+	            background-color: #d4d6d7;
+	        }
+	    }
+    }
+}
+	
+.navbar {
+	&-default {
+		-webkit-border-radius: 0;
+	    -moz-border-radius: 0;
+	    -ms-border-radius: 0;
+	    -o-border-radius: 0;
+	    border-radius: 0;
+	    background: transparent;
+	    border: none;
+	    .navbar {
+			&-brand {
+				font-family: 'Damion', cursive;
+				color: #fff;
+				font-size: 30px;
+				position: relative;
+				&:hover,&.active {
+			    	color: #fff;
+			    }
+			}
+			&-nav  {
+				li a, .active a {					
+					color: #fff;
+					background-color: transparent;
+					&:hover, &:focus, &:active {
+						background-color: transparent;
+						color: #fff;
+						font-weight: bold;
+					}					
+				}
+				.active a {
+					font-weight: bold;
+				} 
+			}
+
+	    }
+	}
+}
+.content {
+	&-title {
+		position: relative;
+		margin-bottom: 25px;
+		padding-bottom: 20px;
+		&:after {
+            content:'';
+            left: 0;
+            width: 0;
+            bottom: 0;
+            width: 50px;
+            height: 6px;
+            position: absolute;
+            background-color: #f16d99;
+        }
+	}
+	&-left,&-right {
+		padding: 45px;
+		p {
+			text-align: justify;
+		}
+	}
+	&-left {
+		color: #232129;
+		background: #fff;
+		padding-bottom: 130px;
+	}
+	&-right {
+		.content-title:after {
+			background-color: #fffd43;
+		}
+		h3 {
+			font-size: 16px;
+			font-weight: bold;
+		}
+	}
+}
+.paragraph {
+	position: relative;
+	margin-bottom: 30px;
+	img {
+		width: 70px;
+		position: absolute;
+	}
+	&-content {
+		margin-left: 90px;
+	}
+}
+.section {
+	float: left;
+	width: 100%;
+	margin-bottom: 30px;
+	&-title {
+		position: relative;
+		margin-bottom: 25px;
+		padding-bottom: 20px;
+		&:after {
+            content:'';
+            left: 0;
+            width: 0;
+            bottom: 0;
+            width: 50px;
+            height: 6px;
+            position: absolute;
+            background-color: #00adef;
+        }
+	}
+	&-body {
+		float: left;
+		width: 100%;
+		color: #555;
+		padding: 20px 40px;
+		background-color: #fff;
+		h3 {
+			margin-top: 20px;
+		}
+	}
+}
+.example {
+	color: #fff;
+	padding: 20px;
+	background-color: #322e3f;
+	webkit-border-radius: 10px;
+	moz-border-radius: 10px;
+	ms-border-radius: 10px;
+	o-border-radius: 10px;
+	border-radius: 10px;
+	p {
+		margin: 0;
+		letter-spacing: 1px;
+	}
+	.mg-l {
+		color: #fff19c;
+		margin-left: 30px;
+	}
+	.number {
+		color: #c4adff;
+	}
+}
+[class*="dotstail-"] {
+	width: 100%;
+	line-height: 1.6em;
+}

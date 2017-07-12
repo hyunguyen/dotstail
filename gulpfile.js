@@ -75,4 +75,4 @@ gulp.task("Sync", ['include-html', 'sass', 'js'], function(){
     gulp.watch(['./theme/js/*.js'], ['js']);
 })
 
-gulp.task('default', ['Sync', 'copy-js', 'copy-img', 'copy-fonts']);
+gulp.task('default', ['Sync', 'copy-js', 'sass' , 'copy-img', 'copy-fonts']);

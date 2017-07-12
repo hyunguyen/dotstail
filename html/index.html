@@ -1,27 +1,162 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
-    <title>Document</title>
-    <style type="text/css">
-        .item-name {
-            width: 300px;
-            line-height: 1.6em;
-        }
-    </style>
+    <title>Dotstail</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="./theme/css/style.css">
+    <script type="text/javascript" src="./theme/js/jquery.min.js"></script>
+    <script type="text/javascript" src="./theme/js/bootstrap.min.js"></script>
     <script type="text/javascript" src="./theme/js/dotstail.js"></script>
 </head>
-<body>
-    <h1>Hello Everybody</h1>
-    <div class="item-name">
-        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Illo sequi quas harum saepe asperiores dignissimos incidunt nihil quaerat! Ea vel ullam aliquid quidem quas quasi qui, earum nulla atque excepturi.
 
-        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Vero non nesciunt esse adipisci ducimus itaque ratione magnam saepe, hic nostrum, accusantium, ea delectus reiciendis earum autem voluptas cupiditate illo eius.
+<body>
+    <nav class="navbar navbar-default">
+        <div class="container">
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <a class="navbar-brand bottom-line blue-line" href="#">dotstail</a>
+            </div>
+
+            <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                <ul class="nav navbar-nav navbar-right">
+                    <li class="active bottom-line pink-line"><a href="#about">About<span class="sr-only">(current)</span></a></li>
+                    <li class="bottom-line orange-line"><a href="#howto">How to Use & Doc</a></li>
+                    <li class="bottom-line green-line"><a href="https://github.com/foxieboy/dotstail">Github</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <div class="container">
+        <div class="row">
+            <div id="about" class="section section-about">
+                <div class="col-sm-4 content content-left">
+                    <h1 class="content-title">About <strong>dotstail</strong></h1>
+                    <h3>The Problem</h3>
+                    <p>
+                        As we - Front-end Devs all know that Css <code>text-overflow: ellipsis</code> gives result as <strong>a single line only</strong>, which is annoying sometimes when the outcome wanted is a mutiple line ellipsis.
+                    </p>
+                    <h3>What is dotstail?</h3>
+                    <p>
+                        Dotstail is a repo that help you to custom <code>text-overflow: ellipsis</code> for <strong>mutiple lines</strong> by using JavaScript and a little css line.
+                    </p>
+                    <!-- <p>
+                        By using <strong>dotstail</strong> not only you can ajust the number of line you want to have the ellipsis effect but also the number letter(s) you want to cut out.
+                    </p> -->
+                </div>
+                <div class="col-sm-8 content-right">
+                    <h1 class="content-title"><strong>dotstail</strong> Demos</h1>
+                    <div class="paragraph">
+                        <img src="theme/images/cactus.png" alt="">
+                        <div class="paragraph-content">
+                            <h3>The 1st Paragraph</h3>
+                            <p class="dotstail-1">
+                                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quasi illo culpa iste, ea accusantium, ut nulla eligendi. Omnis sapiente ex delectus mollitia nam eveniet unde pariatur voluptatem adipisci dolore, illum!
+                            </p>
+                        </div>
+                    </div>
+                    <div class="paragraph">
+                        <img src="theme/images/landscape.png" alt="">
+                        <div class="paragraph-content">
+                            <h3>The 2nd Paragraph</h3>
+                            <p class="dotstail-2">
+                                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Necessitatibus illum ex, soluta temporibus suscipit rem, vel, animi iste praesentium fugiat quisquam vero non excepturi corporis! Minus deleniti aliquam blanditiis nobis! Lorem ipsum dolor sit
+                                amet, consectetur adipisicing elit. Ab recusandae nihil, consequuntur beatae possimus neque, aspernatur molestias itaque sed a maxime! Culpa, hic laboriosam, consequuntur deleniti enim quae nisi amet.
+                            </p>
+                        </div>
+                    </div>
+                    <div class="paragraph">
+                        <img src="theme/images/boat.png" alt="">
+                        <div class="paragraph-content">
+                            <h3>The 3rd Paragraph</h3>
+                            <p class="dotstail-3">
+                                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nulla voluptate, voluptatem doloremque nobis. At quibusdam dolores culpa voluptatibus consequuntur in sequi laborum minima, voluptas veritatis iusto earum asperiores unde. Id. Lorem ipsum dolor
+                                sit amet, consectetur adipisicing elit. Provident quam a perspiciatis, molestias aperiam dolorum ipsam ab facilis qui officia ea recusandae inventore magnam quod quidem vel dolore molestiae! Vel?
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div id="howto" class="section section-doc">
+                <h1 class="section-title">How to use</h1>
+                <div class="section-body">
+                    <div class="col-xs-6">
+                        <h3>Set Up</h3>
+                        <p>
+                            Call the action: <br>
+                            <code>dotstail.setDot({</code> ... <code>});</code>
+                        </p>
+
+                        <h3>Options:</h3>
+                        <p>
+                            Call the element: <br>
+                            <code>'element'</code>: <code>'class/id'</code>
+                        </p>
+                        <p>
+                            Numbers of letter wanted to be cut off <i>(optional)</i>: <br>
+                            <code>'letter'</code>: <code>number</code> <small>(default: 0)</small>
+                        </p>
+                        <p>
+                            Numbers of line wanted to be ellipsis <i>(optional)</i>: <br>
+                            <code>'lines'</code>: <code>number</code>  <small>(default: 1)</small>
+                        </p>
+
+                        <h3><strong>Important</strong> CSS Required</h3>
+                        <p>
+                            Element's line-height needed to work (<i>must be a <code>em</code> unit)</i>: <br>
+                            <code>line-height:</code> <code>...em;</code>
+                        </p>
+                    </div>
+                    <div class="col-xs-6">
+                        <h3>Examples:</h3>
+                        <h4>Full Option:</h4>
+                        <div class="example">
+                            <p>dotstail.setDot({</p>
+                                <p class="mg-l">'element': '.dotstail-1',</p>
+                                <p class="mg-l">'letter': <span class="number">2</span>,</p>
+                                <p class="mg-l">'lines': <span class="number">2</span></p>
+                            <p>});</p>
+                        </div>
+                        <h4>Remove <code>'letter'</code> Option:</h4>
+                        <div class="example">
+                            <p>dotstail.setDot({</p>
+                                <p class="mg-l">'element': '.dotstail-2',</p>
+                                <p class="mg-l">'lines': <span class="number">3</span></p>
+                            <p>});</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
     </div>
 
 
+
     <script type="text/javascript">
-        setDot(0, 1);
+        dotstail.setDot({
+            'element': '.dotstail-1',
+            'letter': 0,
+            'lines': 2,
+        });
+
+        dotstail.setDot ({
+            'element': '.dotstail-2',
+            'letter': 0,
+            'lines': 3,
+        });
+
+        dotstail.setDot ({
+            'element': '.dotstail-3',
+            'lines': 4,
+        });
     </script>
 </body>
+
 </html>
