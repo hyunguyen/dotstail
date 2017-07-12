@@ -23,7 +23,7 @@ In other to use dotstail:
 Call the function by `dotstail.setDot ();`
 
 ## Demo
-
+*https://foxieboy.github.io/dotstail/
 
 ## Documentation
 * `element`: is your element class/Id

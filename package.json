@@ -1,6 +1,6 @@
 {
   "name": "dotstail",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Dot",
   "main": "index.js",
   "scripts": {
