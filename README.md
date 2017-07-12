@@ -1,5 +1,7 @@
 # dotstail
 
+[![NPM version][npm-image]][npm-url] [![Downloads][downloads-image]][npm-url]
+
 ![enter image description here](http://i.imgur.com/Lhvjbuo.png)
 
 ## Quick start
@@ -27,9 +29,9 @@ Call the function by `dotstail.setDot ();`
 * https://foxieboy.github.io/dotstail/
 
 ## Documentation
-* `element`: is your element class/Id
-* `letter`: is the number of letter you want to cut out at the end of the last line.
-* `lines`: is the number of line you want your element to have a `text elipsis` effect.
+* `element`	: is your element class/Id
+* `letter`	: is the number of letter you want to cut out at the end of the last line.
+* `lines`	: is the number of line you want your element to have a `text elipsis` effect.
 
 ## Tree
 ```
@@ -51,6 +53,10 @@ public/
 
 #### Foxieboy
 * Github:   https://github.com/foxieboy/dotstail & https://github.com/crazychicken
+
+[downloads-image]: https://img.shields.io/npm/dm/dotstail.svg
+[npm-url]: https://www.npmjs.com/package/dotstail
+[npm-image]: https://img.shields.io/npm/v/dotstail.svg
 
 
 ## Copyright and license
