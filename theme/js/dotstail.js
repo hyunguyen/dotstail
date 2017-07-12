@@ -1,5 +1,4 @@
 'use strict';
-// window.onload = function(){
 var dotstail = {
     setDot: function ( options ) {
         window.addEventListener('load', function() {
@@ -9,7 +8,6 @@ var dotstail = {
                 myArray.push( options[el] );
             });
             var myObject = checkError.apply(myObject, myArray);
-
             // check error value include
             function checkError ( pr_element, pr_letter, pr_lines, pr_resize ) {
                 var getElement = document.querySelectorAll(pr_element);
@@ -86,4 +84,3 @@ var dotstail = {
         },true);
     }
 }
-// }
