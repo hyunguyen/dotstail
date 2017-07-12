@@ -1,6 +1,6 @@
 {
   "name": "dotstail",
-  "version": "1.0.2",
+  "version": "1.0.4",
   "description": "Dotstail-multiple lines elipsis",
   "main": "dotstail.js",
   "scripts": {
@@ -12,15 +12,14 @@
   "devDependencies": {
     "babel-cli": "^6.24.1",
     "babel-preset-es2015": "^6.24.1",
-    "bootstrap-sass": "^3.3.7",
     "browser-sync": "^2.18.8",
     "checkbox-radio": "^1.0.4",
     "gulp": "3.x.x",
     "gulp-file-include": "^1.0.0",
     "gulp-html-beautify": "^1.0.1",
+    "gulp-concat": "^2.6.1",
     "gulp-jsmin": "^0.1.5",
-    "gulp-sass": "^3.1.0",
-    "jquery": "^1.9.1"
+    "gulp-sass": "^3.1.0"
   },
   "repository": {
     "type": "git",

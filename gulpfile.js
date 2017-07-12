@@ -1,6 +1,9 @@
 var gulp = require('gulp');
 var sass = require('gulp-sass');
 
+var concat = require('gulp-concat');
+var jsmin = require('gulp-jsmin');
+
 var htmlbeautify = require('gulp-html-beautify');
 var gulp_file_include = require('gulp-file-include');
 var browser_sync = require('browser-sync').create();
@@ -11,7 +14,7 @@ gulp.task('include-html', function(){
         "indent_size": 4
     };
     gulp.src([
-        './html/**/*.html'
+        './html/*.html'
     ])
     .pipe(gulp_file_include())
     .pipe(htmlbeautify(options))
@@ -30,27 +33,11 @@ gulp.task('sass', function(){
 // SYNC js
 gulp.task('js', function(){
     gulp.src([
-        './theme/js/*.js'
+        './theme/js/dotstail.js'
     ])
+    .pipe(concat('dotstail.min.js'))
+    .pipe(jsmin())
     .pipe(gulp.dest('./public/theme/js'));
-});
-
-// COPY library js
-gulp.task('copy-js', function(){
-    gulp.src([
-        './node_modules/jquery/dist/jquery.min.js',
-        './node_modules/bootstrap-sass/assets/javascripts/bootstrap.min.js',
-        './theme/js/*.js'
-    ])
-    .pipe(gulp.dest('./public/theme/js'));
-});
-
-// COPY fonts
-gulp.task('copy-fonts', function(){
-    gulp.src([
-        './theme/fonts/*'
-    ])
-    .pipe(gulp.dest('./public/theme/fonts'));
 });
 
 
@@ -75,4 +62,4 @@ gulp.task("Sync", ['include-html', 'sass', 'js'], function(){
     gulp.watch(['./theme/js/*.js'], ['js']);
 })
 
-gulp.task('default', ['Sync', 'copy-js', 'sass' , 'copy-img', 'copy-fonts']);
+gulp.task('default', ['Sync', 'copy-img']);

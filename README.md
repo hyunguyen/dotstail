@@ -5,7 +5,7 @@
 ## Quick start
 * Clone the repo: `git clone git@github.com:foxieboy/dotstail.git`
 * Install with npm: `npm install --save-dev dotstail`
-* Or download the [latest release] (https://github.com//foxieboy/dotstail/archive/master.zip)
+* Or download the [latest release](https://github.com//foxieboy/dotstail/archive/master.zip)
 
 ## How to use
 In other to use dotstail:
@@ -15,7 +15,7 @@ In other to use dotstail:
 dotstail.setDot ({  
    'element': '*your element class or id here*',  
    'letter': 0,  
-   'lines': 4,  
+   'lines': 4  
 });
 ```
 * Please keep in mind: `letter`, and `line` option are optional, use them if you want to. Also those options must be a `number`, not `string`.
@@ -29,9 +29,15 @@ Call the function by `dotstail.setDot ();`
 ## Documentation
 * `element`: is your element class/Id
 * `letter`: is the number of letter you want to cut out at the end of the last line.
-* `line`: is the number of line you want your element to have a `text elipsis` effect.
+* `lines`: is the number of line you want your element to have a `text elipsis` effect.
 
-
+## Tree
+```
+public/
+  └── theme/
+      └── js/
+            └── dotstail.min.js
+```
 ## Template full feature list
 
 * Semantically Correct / Valid HTML Code
