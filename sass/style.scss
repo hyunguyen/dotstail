@@ -189,6 +189,17 @@ body {
 			margin-top: 20px;
 		}
 	}
+	&.thanks {
+		padding: 10px;
+		margin-bottom: 0;
+		text-align: center;
+		a {
+			color: #acd9ff;
+			&:hover,&:focus {
+				text-decoration: none;
+			}
+		}
+	}
 }
 .example {
 	color: #fff;

@@ -5952,6 +5952,14 @@ body {
     background-color: #fff; }
     .section-body h3 {
       margin-top: 20px; }
+  .section.thanks {
+    padding: 10px;
+    margin-bottom: 0;
+    text-align: center; }
+    .section.thanks a {
+      color: #acd9ff; }
+      .section.thanks a:hover, .section.thanks a:focus {
+        text-decoration: none; }
 
 .example {
   color: #fff;
