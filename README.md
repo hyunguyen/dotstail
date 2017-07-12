@@ -36,14 +36,15 @@ Call the function by `dotstail.setDot ();`
 * Semantically Correct / Valid HTML Code
 * HTML5, CSS3
 * Javascript / JS6
-* Full project and seed project (build with: Gulp, Sass, Javascript, Npm, Babel)
+* Full project and seed project (build with: Gulp, Sass, Javascript, Npm)
 * Cross browser compatible ( Internet Explorer 10+, Firefox, Safari, Opera, Chrome etc. )
 * W3C Valid source code, properly formatted and commented
 
 ## Creators
 
 #### Foxieboy
-* Github:   https://github.com/foxieboy/dotstail
+* Github:   https://github.com/foxieboy/dotstail & https://github.com/crazychicken
+
 
 ## Copyright and license
 
