@@ -11,12 +11,13 @@
 In other to use dotstail:
 1. The element you want to have a text elipsis effect must have a CSS `line-height property` (must be a `em` unit).
 2. In your script file, set dotstail function for the element:
-
-`dotstail.setDot ({
-    'element': '*your element class or id here*',
-    'letter': 0, 
-    'lines': 4,
-});`
+```javascript
+dotstail.setDot ({  
+   'element': '*your element class or id here*',  
+   'letter': 0,  
+   'lines': 4,  
+});
+```
 * Please keep in mind: `letter`, and `line` option are optional, use them if you want to. Also those options must be a `number`, not `string`.
 
 ## Call the function
