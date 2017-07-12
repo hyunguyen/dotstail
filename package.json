@@ -1,17 +1,10 @@
 {
   "name": "dotstail",
-  "version": "1.0.4",
-  "description": "Dotstail-multiple lines elipsis",
-  "main": "dotstail.js",
-  "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
-  },
-  "scripts": {
-    "build": "babel ./theme/js/dotstail.js --minified --no-comments --out-file ./theme/js/dotstail.min.js --presets=es2015"
-  },
+  "version": "1.1.0",
+  "description": "Dotstail- help you to make multiple lines elipsis",
+  "main": "dotstail.min.js",
+
   "devDependencies": {
-    "babel-cli": "^6.24.1",
-    "babel-preset-es2015": "^6.24.1",
     "browser-sync": "^2.18.8",
     "checkbox-radio": "^1.0.4",
     "gulp": "3.x.x",
@@ -29,7 +22,6 @@
     "HTML",
     "CSS",
     "Javascript",
-    "ES6",
     "..."
   ],
   "author": "foxieboy",
