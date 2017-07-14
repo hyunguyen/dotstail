@@ -139,6 +139,9 @@ body {
 		padding-bottom: 130px;
 	}
 	&-right {
+		small {
+			color: #fff;	
+		}
 		.content-title:after {
 			background-color: #fffd43;
 		}

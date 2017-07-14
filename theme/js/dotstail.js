@@ -1,4 +1,4 @@
-'use strict';
+'us strict';
 var dotstail = {
     setDot: function ( options ) {
         window.addEventListener('load', function() {
@@ -24,14 +24,14 @@ var dotstail = {
                 }
 
                 if ( pr_element === undefined ) {
-                    return console.log("%c'Thank you for useing dotstail. Please, insert property for element selector element: 'element here'", 'background: #f16d99; color: #fff');
+                    return console.log("%c'Thank you for using dotstail. Please, insert property for element selector element: 'element here'", 'background: #f16d99; color: #fff');
                 }
                 if ( pr_element.slice(0,1) != '.' && pr_element.slice(0,1) != '#' ) {
-                    return console.log("%c'Thank you for useing dotstail. Please, insert property for element selector element: '.' or '#'", 'background: #f16d99; color: #fff');
+                    return console.log("%c'Thank you for using dotstail. Please, insert property for element selector element: '.' or '#'", 'background: #f16d99; color: #fff');
                 }
 
                 if ( pr_letter != undefined && typeof(pr_letter) === 'string' ) {
-                    return console.log("%c'Thank you for useing dotstail. Please, insert property for element selector letter: 'number here'", 'background: #f16d99; color: #fff');
+                    return console.log("%c'Thank you for using dotstail. Please, letter property must be a number", 'background: #f16d99; color: #fff');
                 }
                 if ( pr_letter === undefined ) {
                     getElement.forEach( el => {
@@ -40,7 +40,7 @@ var dotstail = {
                 }
 
                 if ( pr_lines != undefined && typeof(pr_lines) === 'string' ) {
-                    return console.log("%c'Thank you for useing dotstail. Please, insert property for element selector line-height: 'number here'", 'background: #f16d99; color: #fff');
+                    return console.log("%c'Thank you for using dotstail. Please, lines property must be a number", 'background: #f16d99; color: #fff');
                 }
                 if ( pr_lines === undefined || pr_lines === 0 ) {
                     getElement.forEach( el => {
@@ -55,7 +55,7 @@ var dotstail = {
                     addDot(pr_element, pr_letter, pr_lines, text_data);
                 }
                 if ( pr_resize != undefined && typeof(pr_resize) != "boolean" ) {
-                    return console.log("%c'Thank you for useing dotstail. Please, insert property for element selector resize: 'boolean (true, flase)'", 'background: #f16d99; color: #fff');
+                    return console.log("%c'Thank you for using dotstail. Please, insert property for element selector resize: 'boolean (true, flase)'", 'background: #f16d99; color: #fff');
                 }
                 // undefined -> default true
                 if ( pr_resize === undefined || pr_resize === true ) {
@@ -70,13 +70,13 @@ var dotstail = {
 
                 getElement.forEach( el => {
                     maxHeight = parseFloat(window.getComputedStyle(el).getPropertyValue('line-height')) * pr_lines;
-                    for (var i = 0; i < pr_text_data.length; i++) {
-                        el.textContent = pr_text_data.slice(0, [i])+'...';
+                    for (var i = 0; i < pr_text_data.length + 1; i++) {
+                        el.textContent = pr_text_data.slice(0, [i]);
                         var height = parseFloat(el.offsetHeight);
                         var width = parseFloat(el.offsetWidth);
                         // var width = parseFloat(el.offsetWidth);
                         if (height > maxHeight) {
-                            return el.textContent = pr_text_data.slice(0, [i] - 1 - pr_letter)+'...';
+                            return el.textContent = pr_text_data.slice(0, [i] - 4 - pr_letter)+'...';
                         }
                     }
                 });

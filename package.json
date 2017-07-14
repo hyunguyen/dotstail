@@ -1,6 +1,6 @@
 {
   "name": "dotstail",
-  "version": "1.1.0",
+  "version": "1.2.0",
   "description": "Dotstail- help you to make multiple lines elipsis",
   "main": "dotstail.min.js",
 

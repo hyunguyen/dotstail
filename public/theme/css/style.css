@@ -95,6 +95,9 @@ body {
   background: #fff;
   padding-bottom: 130px; }
 
+.content-right small {
+  color: #fff; }
+
 .content-right .content-title:after {
   background-color: #fffd43; }
 
