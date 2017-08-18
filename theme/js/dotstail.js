@@ -63,20 +63,23 @@ var dotstail = {
                 }
             }
 
-            function addDot (pr_element, pr_letter, pr_lines, pr_text_data) {
+            function addDot (pr_element, pr_letter, pr_lines) {
                 var getElement = document.querySelectorAll(pr_element);
                 getElement = [].slice.call(getElement);
                 var maxHeight; // set maxHeight
 
                 getElement.forEach( el => {
+                    var text_data;
+                    text_data = el.textContent.trim();
                     maxHeight = parseFloat(window.getComputedStyle(el).getPropertyValue('line-height')) * pr_lines;
-                    for (var i = 0; i < pr_text_data.length + 1; i++) {
-                        el.textContent = pr_text_data.slice(0, [i]);
+                    for (var i = 0; i < text_data.length + 1; i++) {
+                        el.textContent = text_data.slice(0, [i]);
                         var height = parseFloat(el.offsetHeight);
                         var width = parseFloat(el.offsetWidth);
-                        // var width = parseFloat(el.offsetWidth);
+
+
                         if (height > maxHeight) {
-                            return el.textContent = pr_text_data.slice(0, [i] - 4 - pr_letter)+'...';
+                            return el.textContent = text_data.slice(0, [i] - 4 - pr_letter)+'...';
                         }
                     }
                 });
