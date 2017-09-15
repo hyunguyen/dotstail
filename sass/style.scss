@@ -1,5 +1,13 @@
 @import url('https://fonts.googleapis.com/css?family=Damion|Roboto:300,700');
-
+.nav-huy {
+	padding: 0;
+	li {
+		
+		display: inline-block;
+		padding: 10px;
+		background-color: blue;
+	}
+}
 //Custom Css
 body {
 	font-family: 'Roboto', sans-serif;
