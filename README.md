@@ -6,7 +6,7 @@
 
 ## Quick start
 * Clone the repo: `git clone git@github.com:foxieboy/dotstail.git`
-* Install with npm: `npm install --save-dev dotstail`
+* Install with npm: `npm install --save dotstail`
 * Or download the [latest release](https://github.com//foxieboy/dotstail/archive/master.zip)
 
 ## How to use
