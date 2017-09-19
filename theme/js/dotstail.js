@@ -43,12 +43,12 @@ var dotstail = {
 
                     var text_local = function(){
                         maxHeight = parseFloat(window.getComputedStyle(el).getPropertyValue('line-height')) * pr_lines;
-                        text_use = text_cache; 
-                        for (var i = 0; i < text_use.length; i++) {
+                        text_use = text_cache.trim(); 
+                        for (var i = 0; i < text_use.length + 1; i++) {
                             el.textContent = text_use.slice(0, [i]);
                             var height = parseFloat(el.offsetHeight);
                             if (height > maxHeight) {
-                                return el.textContent = text_use.slice(0, [i] - 3 - pr_letter) + "...";
+                                return el.textContent = text_use.slice(0, [i] - 4 - pr_letter) + "...";
                             }
                         }
                     }
